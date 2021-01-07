@@ -13,6 +13,7 @@ export const alert = {
         basePage.wait();
         cy.on('window:alert', (message) => {
             expect(message).to.equal(str)
+            // cypress clicks on OK by default on window alerts
         })
     },
 }
