@@ -33,7 +33,7 @@ describe ('log in the site', function () {
         logIn.clickOnLogInLink();
         logIn.clickOnCrossButton();
 
-        logIn.logInModalShoulNotExist();
+        logIn.logInModalShoulNotBeVisible();
     });
 
     it ('Should display an alert asking to fill in the required data if nothing is typed', function(){
@@ -69,4 +69,14 @@ describe ('log in the site', function () {
 
         logIn.welcomeMessageShouldGreet(credentials.user);
     });
+
+    it ('Should successfully log out after clicking on log out', function(){
+        logIn.clickOnLogInLink();
+        logIn.typeUser(credentials.user);
+        logIn.typePassword(credentials.password);
+        logIn.clickOnLogInButton();
+        logIn.clickOnLogOut();
+
+        logIn.welcomeMessageShouldNotBeVisible();
+    })
 });
