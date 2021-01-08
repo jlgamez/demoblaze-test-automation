@@ -15,10 +15,10 @@ export const signUp = {
     clickOnCrossButton () {signUpElements.crossButton().click({force:true});},
     clickOnSignUpButton () {signUpElements.signUpButton().click();},
     signUpModalShouldBeVisible () {signUpElements.signUpModal().should('be.visible');},
-    signUpModalShoulNotExist () {signUpElements.signUpModal().should('not.be.visible');},
+    signUpModalShoulNotBeVisible () {signUpElements.signUpModal().should('not.be.visible');},
     modalTitleShouldHaveText (text) {signUpElements.modalTitle().should('have.text', text)},
     typeUser (user) {signUpElements.userInput().invoke('val', user)},
     typePassword (password) {signUpElements.passwordInput().invoke('val', password);},
     signUpAlertShouldHaveText (text) {alert.textEqualsTo(text)},
-    
+
 }

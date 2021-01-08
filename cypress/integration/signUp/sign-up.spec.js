@@ -35,7 +35,7 @@ describe ('Sign up', function () {
         signUp.clickOnSignUp();
         signUp.clickOnCrossButton();
 
-        signUp.signUpModalShoulNotExist();
+        signUp.signUpModalShoulNotBeVisible();
     });
 
     it ('Should display an alert asking to fill in the required data if nothing is typed', function(){
