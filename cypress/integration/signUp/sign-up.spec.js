@@ -6,6 +6,7 @@ describe ('Sign up', function () {
     let credentials;
 
     before ('Go to the main page', function () {
+        // load credentials
         cy.fixture('credentials.json').then(function(cred){
             credentials = cred;
         }); 

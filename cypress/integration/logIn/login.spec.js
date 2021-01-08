@@ -5,6 +5,7 @@ import {logIn} from './login.page.js';
 describe ('log in the site', function () {
     let credentials;
     before ('Go to the main page', function () {
+        // load credentials
         cy.fixture('credentials.json').then(function(cred){
             credentials = cred;
         }); 
