@@ -9,6 +9,7 @@ describe ('log in the site', function () {
             credentials = cred;
         }); 
 
+        // Access the site
         go.toHomePage();
         basePage.urlShouldContain('/demoblaze.com');
     });

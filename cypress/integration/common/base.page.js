@@ -2,6 +2,7 @@ export const basePage = {
     urlShouldContain(str){cy.url().should('contain', str);},
     reload () {cy.reload();},
     wait () {cy.wait(2000)},
+    keepCookies () {Cypress.Cookies.preserveOnce('session_id', 'remember_token');}
 }
 
 export const go = {

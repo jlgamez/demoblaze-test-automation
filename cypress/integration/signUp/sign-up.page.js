@@ -20,5 +20,5 @@ export const signUp = {
     typeUser (user) {signUpElements.userInput().invoke('val', user)},
     typePassword (password) {signUpElements.passwordInput().invoke('val', password);},
     signUpAlertShouldHaveText (text) {alert.textEqualsTo(text)},
-
+    
 }

@@ -9,7 +9,8 @@ describe ('Sign up', function () {
         cy.fixture('credentials.json').then(function(cred){
             credentials = cred;
         }); 
-
+        
+        // Access the site
         go.toHomePage();
         basePage.urlShouldContain('/demoblaze.com');
     });

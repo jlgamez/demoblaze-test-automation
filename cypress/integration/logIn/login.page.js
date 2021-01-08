@@ -1,4 +1,3 @@
-import {basePage} from '../common/base.page.js';
 import {alert} from '../common/base.page.js';
 
 const loginElements = {
